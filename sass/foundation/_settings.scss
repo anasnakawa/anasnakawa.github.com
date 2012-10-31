@@ -1,11 +1,18 @@
+// ------------------------------
+// foundation common settings
+// ------------------------------
+
+// settings here are shared between ltr & rtl layouts
+// ------------------------------
+
 @import "foundation/common/ratios";
 
 // Settings file containing Foundation defaults
 
 // Grid Settings
 
-// $rowWidth: 1000px;
-// $columnGutter: 30px;
+$rowWidth: 100%;
+$columnGutter: 1%;
 // $totalColumns: 12;
 // $mobileTotalColumns: 4;
 // $blockGridElements: 12; // Highest number of block grid elements, Maximum of 24 supported
