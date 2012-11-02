@@ -10,41 +10,55 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>Welcome to Foundation</title>
+	<title>I live in the browser - by Anas Nakawa</title>
 
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation/foundation-ltr.css">
+	<link rel="stylesheet" href="stylesheets/foundation/foundation-rtl.css">
 	<link rel="stylesheet" href="stylesheets/app-rtl.css">
 	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 
 </head>
 <body>
 
-	<div class="row">
-		<div class="eight columns">
-			<h2>Welcome to Foundation</h2>
-			<p>This is version 3.2.0.</p>
+	<div class="columns five centered">
+		<div class="">
+			<h3>I Live in the Browser</h3>
 			<hr />
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="eight columns">
-			<h3>The Grid</h3>
 
 			<!-- Grid Example -->
-			<div class="row">
-				<div class="twelve columns">
-					<div class="ui-dark-panel-header">
-						header here
+			<div class="ui-3d-card">
+				<div class="ui-3d-card-container">
+					<div class="ui-3d-card-front">
+						<div class="ui-dark-panel-header">
+							<div class="ui-panel-text-container">
+								header here
+							</div>
+							<a href="#" class="ui-dark-panel-button small button ui-left-radius">
+								<span class="ui-icon back-icon">&nbsp;</span>
+							</a>
+							<a href="#" class="ui-dark-panel-button small button ui-right-radius">
+								<span class="ui-icon forward-icon">&nbsp;</span>
+							</a>
+							<a href="#" class="ui-dark-panel-button small button far js-3d-flip">
+								<span class="ui-icon user-icon">&nbsp;</span>
+							</a>
+						</div>
+						<div class="panel">
+							<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+						</div>
 					</div>
-					<div class="panel">
-						<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+					<div class="ui-3d-card-back">
+						<div class="panel">
+							<a href="#" class="ui-dark-panel-button small button far js-3d-flip">
+								<span class="ui-icon user-icon">&nbsp;</span>
+							</a>
+							<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<h3>Buttons</h3>
+			<!--h3>Buttons</h3>
 
       		<div class="row">
 				<div class="six columns">
@@ -57,20 +71,7 @@
 					<p><a href="#" class="ui-dark-button button">Medium Success Button</a></p>
 					<p><a href="#" class="ui-dark-button large button">Large Secondary Button</a></p>
 		        </div>
-			</div>
-		</div>
-	
-		<div class="four columns">
-			<h4>Getting Started</h4>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-	
-			<h4>Other Resources</h4>
-			<p>Once you've exhausted the fun in this document, you should check out:</p>
-			<ul class="disc">
-				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-			</ul>
+			</div-->
 		</div>
 	</div>
 
@@ -98,6 +99,7 @@
 
 	<!-- Application Javascript, safe to override -->
 	<script src="javascripts/foundation/app.js"></script>
+	<script src="javascripts/main.js"></script>
 	
 </body>
 </html>

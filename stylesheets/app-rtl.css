@@ -1,11 +1,42 @@
-/* line 24, ../sass/_app.scss */
+/* line 105, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  top: -1px;
+  right: -9px;
+}
+/* line 116, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-icon.user-icon {
+  background-image: url("../images/icons/user.png");
+}
+/* line 116, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-icon.back-icon {
+  background-image: url("../images/icons/back.png");
+}
+/* line 116, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-icon.forward-icon {
+  background-image: url("../images/icons/forward.png");
+}
+
+/* line 26, ../sass/_app.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 39, ../sass/_app.scss */
 body {
   background-color: #393b3e;
   color: #888888;
   text-shadow: 0 1px 0 black;
 }
 
-/* line 30, ../sass/_app.scss */
+/* line 45, ../sass/_app.scss */
 hr {
   border-color: #222222;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -13,7 +44,13 @@ hr {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* line 37, ../sass/_app.scss */
+/* line 52, ../sass/_app.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px 0 black;
+}
+
+/* line 58, ../sass/_app.scss */
+​
 .button.ui-dark-button {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
   border: 1px solid #1a1b1e;
@@ -34,11 +71,13 @@ hr {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 57, ../sass/dark-ui-kit/_ui-kit.scss */
+/* line 50, ../sass/dark-ui-kit/_ui-kit.scss */
+​
 .button.ui-dark-button:hover {
   background-color: #4a4d51;
 }
-/* line 62, ../sass/dark-ui-kit/_ui-kit.scss */
+/* line 55, ../sass/dark-ui-kit/_ui-kit.scss */
+​
 .button.ui-dark-button:active {
   background-color: #3d4044;
   background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(255, 255, 255, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05)));
@@ -51,7 +90,7 @@ hr {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.28), 0 1px 3px rgba(0, 0, 0, 0.3) inset;
 }
 
-/* line 41, ../sass/_app.scss */
+/* line 62, ../sass/_app.scss */
 .ui-dark-panel-header {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
   border: 1px solid #1a1b1e;
@@ -66,15 +105,86 @@ hr {
   background-color: #424549;
   color: white;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  -o-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-  padding: 10px;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  padding: 8px;
+}
+/* line 73, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-dark-panel-header .ui-panel-text-container {
+  display: inline-block;
+  padding: 8px;
 }
 
-/* line 45, ../sass/_app.scss */
+/* line 66, ../sass/_app.scss */
+.ui-dark-panel-button {
+  float: right;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  border: 1px solid #1a1b1e;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  background: linear-gradient(top, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.17), 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 -2px 0 rgba(0, 0, 0, 0.17) inset;
+  -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.17), 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 -2px 0 rgba(0, 0, 0, 0.17) inset;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.17), 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 -2px 0 rgba(0, 0, 0, 0.17) inset;
+  background-color: #424549;
+  color: white;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.17), 0 0 2px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 -2px 0 rgba(0, 0, 0, 0.17) inset;
+  -moz-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.17), 0 0 2px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 -2px 0 rgba(0, 0, 0, 0.17) inset;
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.17), 0 0 2px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 -2px 0 rgba(0, 0, 0, 0.17) inset;
+  width: 30px;
+  height: 30px;
+}
+/* line 50, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-dark-panel-button:hover {
+  background-color: #4a4d51;
+}
+/* line 55, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-dark-panel-button:active {
+  background-color: #3d4044;
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(255, 255, 255, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05)));
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  background: linear-gradient(bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.28), 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.28), 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.28), 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+}
+/* line 92, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-dark-panel-button.far {
+  float: left;
+}
+/* line 95, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-dark-panel-button.ui-right-radius {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* line 98, ../sass/dark-ui-kit/_ui-kit.scss */
+.ui-dark-panel-button.ui-left-radius {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* line 70, ../sass/_app.scss */
 .panel {
   background-color: transparent;
   border: 1px solid #222222;
@@ -83,7 +193,75 @@ hr {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* line 54, ../sass/_app.scss */
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px 0 black;
+/* line 81, ../sass/_app.scss */
+.ui-3d-card {
+  margin: 20px auto;
+  position: relative;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+
+/* line 88, ../sass/_app.scss */
+.ui-3d-card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+}
+/* line 99, ../sass/_app.scss */
+.ui-3d-card-container > .ui-3d-card-front
+, .ui-3d-card-container > .ui-3d-card-back {
+  position: absolute;
+}
+/* line 104, ../sass/_app.scss */
+.ui-3d-card-container > .ui-3d-card-back
+, .ui-3d-card-container > .ui-3d-card-front {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+/* line 110, ../sass/_app.scss */
+.ui-3d-card-front {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 117, ../sass/_app.scss */
+.ui-3d-card-back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* line 123, ../sass/_app.scss */
+.ui-3d-card-container.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }

@@ -17,10 +17,25 @@
 
 // import resources
 // ------------------------------
-
 // dark ui kit
 @import "dark-ui-kit/ui-kit";
 
+// mixins
+// ------------------------------
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+// typography
+// ------------------------------
 body {
   background-color: #393b3e;
   color: #888888;
@@ -34,12 +49,22 @@ hr {
   );
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px 0 #000000;
+}​
+
+// ui kit
+// ------------------------------
 .button.ui-dark-button {
   @include ui-dark-base-button;
 }
 
 .ui-dark-panel-header {
   @include ui-dark-panel;
+}
+
+.ui-dark-panel-button {
+  @include ui-panel-button;
 }
 
 .panel {
@@ -51,6 +76,52 @@ hr {
   );
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px 0 #000000;
+// 3d card
+// ------------------------------
+.ui-3d-card {
+  margin: 20px auto;
+  position: relative;
+  @include perspective(800px);
+  // -webkit-perspective: 800px;
+}
+
+.ui-3d-card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  @include transform-style(preserve-3d);
+  @include transition(transform 1s);
+  // -webkit-transform-style: preserve-3d;
+  // -webkit-transition: -webkit-transform 1s;
+  
+  > .ui-3d-card-front
+  , > .ui-3d-card-back {
+    position: absolute;
+  }
+  
+  > .ui-3d-card-back
+  , > .ui-3d-card-front {
+    @include backface-visibility(hidden);
+    @include opacity(0.9);
+  }
+}
+
+.ui-3d-card-front {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.ui-3d-card-back {
+  
+  @include transform(rotateY( 180deg ));
+  // -webkit-transform: rotateY( 180deg );
+}
+
+.ui-3d-card-container.flipped {
+  @include transform(rotateY( 180deg ));
+  @include backface-visibility(hidden)
+  // -webkit-transform: rotateY( 180deg );
 }
