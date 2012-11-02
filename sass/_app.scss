@@ -1,0 +1,56 @@
+// ------------------------------
+// application styles
+// ------------------------------
+// author : anas.nakawa@gmail.com
+// license: MIT (http://opensource.org/licenses/mit-license.php)
+// ------------------------------
+
+// ------------------------------
+// table of content
+// ------------------------------
+// import resources
+//  - sub title
+//  - sub title 2
+// some mixin
+// ------------------------------
+
+
+// import resources
+// ------------------------------
+
+// dark ui kit
+@import "dark-ui-kit/ui-kit";
+
+body {
+  background-color: #393b3e;
+  color: #888888;
+  text-shadow: 0 1px 0 black;
+}
+
+hr {
+  border-color: #222222;
+  @include box-shadow(
+    0 1px 0 rgba(255, 255, 255, 0.2)
+  );
+}
+
+.button.ui-dark-button {
+  @include ui-dark-base-button;
+}
+
+.ui-dark-panel-header {
+  @include ui-dark-panel;
+}
+
+.panel {
+  background-color: transparent;
+  border: 1px solid #222222;
+  @include box-shadow(
+    0 0 5px rgba(0, 0, 0, 0.5) inset
+    , 0 1px 0 rgba(255, 255, 255, 0.2)
+  );
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px 0 #000000;
+}

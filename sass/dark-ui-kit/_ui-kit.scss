@@ -1,0 +1,73 @@
+// ------------------------------
+// buttons
+// ------------------------------
+// author : anas.nakawa@gmail.com
+// license: MIT (http://opensource.org/licenses/mit-license.php)
+// ------------------------------
+
+// ------------------------------
+// table of content
+// ------------------------------
+// import resources
+//  - sub title
+//  - sub title 2
+// some mixin
+// ------------------------------
+
+
+// import resources
+// ------------------------------
+@import "settings";
+
+// dark ui kit base
+// the common styles across all ui kit elements
+// ------------------------------
+@mixin ui-dark-base($radius: 3px) {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  border: 1px solid #1a1b1e;
+  @include background( 
+    linear-gradient( top, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05) ) 
+  );
+  @include box-shadow(
+    0 2px 1px rgba(0, 0, 0, 0.17)
+    , 0 1px 0 rgba(255, 255, 255, 0.1) inset
+    , 0 0 1px rgba(255, 255, 255, 0.15) inset
+    , 0 -2px 0 rgba(0, 0, 0, 0.17) inset
+  );
+  background-color: #424549;
+  color: white;
+  color: rgba(255, 255, 255, 0.6);
+  @include border-radius($radius)
+}
+
+// panel
+// ------------------------------
+@mixin ui-dark-panel {
+  @include ui-dark-base($radius: 3px 3px 0 0);
+  padding: 10px;
+}
+
+// base button style
+// ------------------------------
+@mixin ui-dark-base-button($radius: 3px) {
+  
+  @include ui-dark-base($radius: $radius);
+  
+  // hover
+  &:hover {
+    background-color: #4a4d51;
+  }
+  
+  // active
+  &:active {
+    background-color: #3d4044;
+    
+    @include background(
+      linear-gradient( bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05) )
+    );
+    @include box-shadow(
+      0 1px 0 rgba(255, 255, 255, 0.28)
+      , 0 1px 3px rgba(0, 0, 0, 0.3) inset
+    );
+  }
+}
