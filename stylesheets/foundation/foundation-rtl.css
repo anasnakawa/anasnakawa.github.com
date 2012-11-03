@@ -892,7 +892,7 @@ form.custom .custom.disabled {
   width: auto;
   max-width: none;
   min-width: 0;
-  margin: 0 -15px;
+  margin: 0 -10px;
 }
 /* line 7, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.0/scss/foundation/components/_grid.scss */
 .row.collapse .column, .row.collapse .columns {
@@ -903,7 +903,7 @@ form.custom .custom.disabled {
   width: auto;
   max-width: none;
   min-width: 0;
-  margin: 0 -15px;
+  margin: 0 -10px;
 }
 /* line 10, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.0/scss/foundation/components/_grid.scss */
 .row .row.collapse {
@@ -914,7 +914,7 @@ form.custom .custom.disabled {
 .column, .columns {
   float: right;
   min-height: 1px;
-  padding: 0 15px;
+  padding: 0 10px;
   position: relative;
 }
 /* line 15, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.0/scss/foundation/components/_grid.scss */
@@ -4744,7 +4744,7 @@ table.hide-for-medium {
   .row .mobile-one {
     width: 25% !important;
     float: right;
-    padding: 0 15px;
+    padding: 0 10px;
   }
   /* line 201, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_mqueries.scss */
   .row .mobile-one:last-child {
@@ -4763,7 +4763,7 @@ table.hide-for-medium {
   .row .mobile-two {
     width: 50% !important;
     float: right;
-    padding: 0 15px;
+    padding: 0 10px;
   }
   /* line 201, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_mqueries.scss */
   .row .mobile-two:last-child {
@@ -4782,7 +4782,7 @@ table.hide-for-medium {
   .row .mobile-three {
     width: 75% !important;
     float: right;
-    padding: 0 15px;
+    padding: 0 10px;
   }
   /* line 201, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_mqueries.scss */
   .row .mobile-three:last-child {
@@ -4801,7 +4801,7 @@ table.hide-for-medium {
   .row .mobile-four {
     width: 100% !important;
     float: right;
-    padding: 0 15px;
+    padding: 0 10px;
   }
   /* line 201, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_mqueries.scss */
   .row .mobile-four:last-child {
