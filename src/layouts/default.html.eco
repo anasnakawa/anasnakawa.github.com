@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+  
+  <% # global variables %>
+  <% appWidth = 'span10 offset1' %>
+  
 	<!-- Meta -->
 	<meta charset="utf-8" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -34,11 +41,15 @@
 	<![endif]-->
 
 	<!-- Styles -->
-	<%- @getBlock('styles').add(["/vendor/twitter-bootstrap/css/bootstrap.css","/vendor/twitter-bootstrap/css/bootstrap-responsive.css","/styles/style.css"]).toHTML() %>
+	<% styles = [] %>
+	<% styles.push("/components/bootstrap-sass/bootstrap-2.3.0.css") %>
+	<% styles.push("/components/bootstrap-sass/bootstrap-responsive-2.3.0.css") %>
+	<% styles.push("/styles/style.css") %>
+	<%- @getBlock('styles').add(styles).toHTML() %>
 </head>
 <body>
 	<!-- Markup -->
-	<div class="navbar navbar-fixed-top">
+	<!-- div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
 				<a class="brand" href="/">Welcome</a>
@@ -51,20 +62,53 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div -->
 	<div class="container">
 		<section id="content" class="content">
-			<%- @content %>
+		  <div class="row">
+		    <div class="<%= appWidth %>">
+		      
+		      <!-- app header -->
+		      <div class="navbar app-header">
+            <div class="navbar-inner">
+              <a class="brand" href="#">Title</a>
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- app body -->
+          <div class="app-body row">
+            
+            <!-- sidebar -->
+            <div class="span3">
+              <h2>some side content</h2>
+            </div>
+            
+            <!-- content -->
+            <div class="span7">
+              <%- @content %>
+            </div>
+          </div>
+		      
+		    </div>
+		  </div>
 		</section>
-		<footer>
-			<p>&copy; Company 2012</p>
-			<p style="float:right;">
-				This website was last updated at <%= @site.date.toISOString() %>
-			</p>
+		<footer class="<%= appWidth %>">
+		  <hr />
+			<p>&copy; Company <%= new Date().getFullYear() %></p>
 		</footer>
 	</div><!-- /container -->
 
 	<!-- Scripts -->
-	<%- @getBlock('scripts').add(["/vendor/jquery.js","/vendor/log.js","/vendor/modernizr.js","/scripts/script.js"]).toHTML() %>
+	<% scripts = [] %>
+	<% scripts.push("/vendor/jquery.js") %>
+	<% scripts.push("/vendor/log.js") %>
+	<% scripts.push("/vendor/modernizr.js") %>
+	<% scripts.push("/scripts/script.js") %>
+	<%- @getBlock('scripts').add(scripts).toHTML() %>
 </body>
 </html>

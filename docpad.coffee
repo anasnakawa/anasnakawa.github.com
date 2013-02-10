@@ -12,16 +12,16 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://anasnakawa.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
+				'anasnakawa.wordpress.com',
+				'anasnakawa.github.com'
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "Anas Nakawa"
 
 			# The website description (for SEO)
 			description: """
@@ -34,10 +34,10 @@ docpadConfig = {
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Anas Nakawa"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "anas.nakawa@gmail.com"
 
 
 
