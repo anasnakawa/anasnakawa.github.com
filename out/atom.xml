@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Anas Nakawa</title>
-    <link href="http://anasnakawa.com/atom.xml" rel="self"/>
-    <link href="http://anasnakawa.com"/>
-    <updated>2013-02-10T18:28:01.413Z</updated>
-    <id>http://anasnakawa.com</id>
+    <title></title>
+    <link href="/atom.xml" rel="self"/>
+    <link href=""/>
+    <updated>2013-02-12T18:12:26.900Z</updated>
+    <id></id>
     <author>
-        <name>Anas Nakawa</name>
-        <email>anas.nakawa@gmail.com</email>
+        <name></name>
+        <email></email>
     </author>
 
     
         <entry>
             <title>This is a Blog Post</title>
-            <link href="http://anasnakawa.com//posts/hello"/>
+            <link href="undefined//posts/hello"/>
             <updated>2013-02-10T17:06:54.000Z</updated>
-            <id>http://anasnakawa.com//posts/hello</id>
+            <id>undefined//posts/hello</id>
             <content type="html">&lt;!DOCTYPE html&gt;
 &lt;!--[if lt IE 7]&gt;      &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot;&gt; &lt;![endif]--&gt;
 &lt;!--[if IE 7]&gt;         &lt;html class=&quot;no-js lt-ie9 lt-ie8&quot;&gt; &lt;![endif]--&gt;
@@ -35,10 +35,10 @@
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
 
     &lt;!-- Our site title and description --&gt;
-    &lt;title&gt;This is a Blog Post | Anas Nakawa&lt;/title&gt;
-    &lt;meta name=&quot;description&quot; content=&quot;When your website appears in search results in say Google, the text here will be shown underneath your website's title.&quot; /&gt;
-    &lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
-    &lt;meta name=&quot;author&quot; content=&quot;Anas Nakawa&quot; /&gt;
+    &lt;title&gt;This is a Blog Post | undefined&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;&quot; /&gt;
 
     &lt;!-- Output DocPad produced meta elements --&gt;
     &lt;meta http-equiv=&quot;X-Powered-By&quot; content=&quot;DocPad&quot;/&gt;
@@ -63,7 +63,7 @@
     
     
     
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;/components/bootstrap-sass/bootstrap-2.2.2.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/components/bootstrap-sass/bootstrap-responsive-2.2.2.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/components/bootstrap-sass/bootstrap-2.3.0.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/components/bootstrap-sass/bootstrap-responsive-2.3.0.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;!-- Markup --&gt;

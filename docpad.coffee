@@ -11,6 +11,10 @@ docpadConfig = {
 
 		# Specify some site properties
 		site:
+		  
+		  # Development mode
+		  mode: 'preview'
+		  
 			# The production url of our website
 			url: "http://anasnakawa.com"
 
